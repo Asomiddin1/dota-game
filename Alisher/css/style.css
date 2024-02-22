@@ -17,6 +17,7 @@ body {
     --accent: #ff0000;
     --text-secondry: #939393;
     --br: 1px solid;
+    --color:#fff;
   }
   .container {
     padding: 0 var(--container-padding);
@@ -29,48 +30,115 @@ body {
     padding-top: 25px;
     
     min-height: 753px;
-    border: 1px solid red;
   }
-  .header-nav {
-    height:100px;
-    
-    border: 1px solid var(--accent);
+  .header-top-nav {
+    height:88px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items:  start;
+    justify-content: center;
   }
-  .nav-logo {   
-    line-height: 36px;
-    letter-spacing: -0.03em;
-  }
-  .nav-links {
-    display: flex;
-    column-gap: 50px;
-  }
-  .nav-links li a {
-    position: relative;
-    font-size: 16px;
-    line-height: 19px;
-  
-    color: var(--text-secondry);
 
-    text-decoration:none ;
+.header-top-nav-h1{
+  color:var(--color);
+  font-size: 4em;
+  font-weight: 500;
+  font-family: monospace;
+  animation: animate 1s infinite;
+}
+
+/* @keyframes{
+  0%{
+
   }
-  .nav-links li a::after {
-    content: "";
-    position: absolute;
-    top: -150px;
-    left: 45%;
+  100%{
     
-    
-    width: 10px;
-    height: 10px;
-    
-    background-color: var(--accent);
-    border-radius: 50%;
-    transition: top .2s ease;
-    will-change: top;
   }
-  .nav-links li a:hover::after {
-    top: 20px;
-  }
+} */
+.top-header{
+  width:1160px;
+  height: 700px;
+
+  padding: 30px;
+  padding-left: 0px;
+   
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.div-img{
+  padding: 10px;
+}
+.div-img-h1
+{
+  display: flex;
+  justify-content: center; 
+
+  padding-top:25px;
+  border: 0px ;
+  font-style: 12px;
+  color: var(--color);
+  font-weight: 300;
+  font-family:monospace;
+}
+
+.header-aida{
+  width: 1160px;
+  height: 650px;
+
+  margin-top: 200px;
+}
+
+.header-aida-h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 38px;
+  color: #A8A8A8;
+ 
+}
+
+.header-aida-h1 span{
+  color: var(--color);
+}
+
+.header-aida-left
+{
+  width: 1160px;
+  height: 650px;
+
+  background-color:#222222;
+  border: 0px;
+
+  margin-top: 80px;
+}
+
+.header-aida-right{
+  width: 282px;
+  height: 650px;
+  background: #101010;
+
+}
+
+.header-aida-right ul{
+  list-style: none;
+}
+.header-aida-right ul li a{
+text-decoration: none;
+display: block; 
+
+width: 282px;
+height: 72px;
+
+color: var(--color);
+padding: 20px;
+font-size: 16x;
+}
+.header-aida-right ul li a:hover{
+ color: #8DFD1B;
+ transition: all 0.5s ;
+ background-color: #222;
+ font-size: 18px;
+
+ padding-right: 10px;
+}
