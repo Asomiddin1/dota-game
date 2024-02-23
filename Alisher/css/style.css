@@ -107,9 +107,7 @@ body {
   width: 1160px;
   height: 650px;
 
-  background-color:#222222;
-  border: 0px;
-
+  background-color:#222222;  
   margin-top: 80px;
 }
 
@@ -141,4 +139,34 @@ font-size: 16x;
  font-size: 18px;
 
  padding-right: 10px;
+}
+
+
+.footer{
+  width: 1440px;
+  height: 240px;
+  margin-top: 300px;
+}
+
+.footer-time{
+  width: 1280px;
+  height: 1370px;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.footer-time-h1{
+  font-size: 38px;
+  font-family: monospace;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-time-time{
+  width: 720px;
+  height: 1265px;
+  border: 1px solid red;
+  margin: auto;
+  margin-top: 80px;
 }
